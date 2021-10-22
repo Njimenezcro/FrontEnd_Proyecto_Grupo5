@@ -1,8 +1,8 @@
 import axios from "axios";
 import jwtDecode from "jwt-decode";
 
-const authUrl = "https://tranquil-reaches-33546.herokuapp.com/auth"; //prod
-///const authUrl = "http://localhost:3002/auth"; //dllo
+const authUrl = "https://git.heroku.com/ancient-beyond-59903.git/auth"; 
+/*const authUrl = "http://localhost:3002/auth";*/ 
 
 export const loginAuth = async (credentials) => {
     return await axios.post(`${authUrl}/login`, credentials);
